@@ -1,0 +1,12 @@
+# Lines starting with # are comments
+
+-f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best'
+
+# continue partials, and skip errors
+-ci
+
+# download old first
+--playlist-reverse
+
+# Save all videos under Movies directory in your home directory
+-o "C:\youtube-vids\%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s"
